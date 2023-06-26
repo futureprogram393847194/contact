@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <meta name="description" content="LP" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header id="header">
+      <h1 class="site-title">
+        <a href="#">
+         Contact
+        </a>
+      </h1>
+    </header>
+
+    <div id="navArea">
+      <nav>
+        <div class="inner">
+          <ul>
+            <li><a href="#"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+            <li><a href="#"><ion-icon name="chatbubbles-outline"></ion-icon> AI Chat</a></li>
+            <li><a href="#"><ion-icon name="document-text-outline"></ion-icon> Orverview</a></li>
+            <li><a href="#"><ion-icon name="mail-outline"></ion-icon> Contact</a></li>
+            <li><a href="#"><ion-icon name="ellipsis-horizontal-outline"></ion-icon> Others</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div id="mask"></div>
+    </div>
+    
+    <main>
+      <!-- メインビジュアル -->
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="./img/main-sp.jpg">
+          <img class="topimg" src="contacttop.jpg" alt="topimg">
+        </picture>
+    </div>
+    <!-- contact　foam -->
+
+    <div class="contact-form">
+        <p class="title">質問、感想、バグの報告などはこちら</p>
+    
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="1424d290-50e5-4d5c-931e-fc55d6eba800">
+            <input type="hidden" name="subject" value="Test">
+          <div class="item">
+            <label class="label">お名前</label>
+            <input type="text" class="inputs" name="name" placeholder="お名前"/>
+          </div>
+    
+          <div class="item">
+            <label class="label">メールアドレス</label>
+            <input type="email" class="inputs" name="email" placeholder="メールアドレス" />
+          </div>
+          
+          <div class="item">
+            <label class="label">ご質問</label>
+            <textarea id="message" name="message" placeholder="内容"></textarea>
+          </div>
+          <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+            <div class="button-area">
+              <input type="submit" value="予約決定" />
+              <input type="reset" value="リセット" />
+            </div>
+          </div>
+        </form>
+    </div>
+
+      <!-- Footer -->
+      <footer id="footer"></footer>
+    </picture>
+  </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
